@@ -1,4 +1,92 @@
-2.4.3_01
-pdl/t/badvalue_scalar_cmp.t .. skipped: Bad values disabled
-Files=1, Tests=0,  0 wallclock secs ( 0.02 usr  0.02 sys +  0.03 cusr  0.09 csys =  0.16 CPU)
-Result: NOTESTS
+2.4.4
+    
+    #   Failed test 'is 1 >  0? -> true'
+    #   at pdl/t/badvalue_scalar_cmp.t line 34.
+    #          got: 'BAD'
+    #     expected: '1'
+    
+    #   Failed test 'is 1 <  0? -> false'
+    #   at pdl/t/badvalue_scalar_cmp.t line 35.
+    #          got: 'BAD'
+    #     expected: '0'
+    
+    #   Failed test 'is 1 == 0? -> false'
+    #   at pdl/t/badvalue_scalar_cmp.t line 36.
+    #          got: 'BAD'
+    #     expected: '0'
+    # Looks like you failed 3 tests of 6.
+
+#   Failed test 'Issue example code'
+#   at pdl/t/badvalue_scalar_cmp.t line 37.
+        
+        #   Failed test '2 <  5'
+        #   at pdl/t/badvalue_scalar_cmp.t line 52.
+        #          got: 'BAD'
+        #     expected: '1'
+        
+        #   Failed test '2 == 5'
+        #   at pdl/t/badvalue_scalar_cmp.t line 57.
+        #          got: 'BAD'
+        #     expected: '0'
+        
+        #   Failed test '2 >  5'
+        #   at pdl/t/badvalue_scalar_cmp.t line 62.
+        #          got: 'BAD'
+        #     expected: '0'
+        # Looks like you failed 3 tests of 3.
+    
+    #   Failed test 'Comparing a 0-dim PDL w/ a scalar should be the same as comparing a scalar w/ a scalar'
+    #   at pdl/t/badvalue_scalar_cmp.t line 66.
+        
+        #   Failed test '2 <  5'
+        #   at pdl/t/badvalue_scalar_cmp.t line 74.
+        #          got: 'BAD'
+        #     expected: '1'
+        
+        #   Failed test 'cmp for < does not set badflag'
+        #   at pdl/t/badvalue_scalar_cmp.t line 78.
+        
+        #   Failed test '2 == 5'
+        #   at pdl/t/badvalue_scalar_cmp.t line 81.
+        #          got: 'BAD'
+        #     expected: '0'
+        
+        #   Failed test 'cmp for == does not set badflag'
+        #   at pdl/t/badvalue_scalar_cmp.t line 85.
+        
+        #   Failed test '2 >  5'
+        #   at pdl/t/badvalue_scalar_cmp.t line 88.
+        #          got: 'BAD'
+        #     expected: '0'
+        
+        #   Failed test 'cmp for > does not set badflag'
+        #   at pdl/t/badvalue_scalar_cmp.t line 92.
+        # Looks like you failed 6 tests of 6.
+    
+    #   Failed test 'Comparing a 0-dim PDL w/ bad value with a 0-dim PDL without bad value set should not set BAD'
+    #   at pdl/t/badvalue_scalar_cmp.t line 93.
+    # Looks like you failed 2 tests of 3.
+
+#   Failed test 'Badvalue set on 0-dim PDL + comparision operators'
+#   at pdl/t/badvalue_scalar_cmp.t line 94.
+    
+    #   Failed test 'Mean of [1 3] is 2'
+    #   at pdl/t/badvalue_scalar_cmp.t line 108.
+    #          got: 'BAD'
+    #     expected: '2'
+    # Looks like you failed 1 test of 2.
+
+#   Failed test 'stats() should not set the badflag for output'
+#   at pdl/t/badvalue_scalar_cmp.t line 109.
+# Looks like you failed 3 tests of 3.
+pdl/t/badvalue_scalar_cmp.t .. 
+Dubious, test returned 3 (wstat 768, 0x300)
+Failed 3/3 subtests 
+
+Test Summary Report
+-------------------
+pdl/t/badvalue_scalar_cmp.t (Wstat: 768 Tests: 3 Failed: 3)
+  Failed tests:  1-3
+  Non-zero exit status: 3
+Files=1, Tests=3,  0 wallclock secs ( 0.03 usr  0.04 sys +  0.02 cusr  0.12 csys =  0.21 CPU)
+Result: FAIL
