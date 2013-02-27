@@ -1,4 +1,4 @@
-2.4.11
+2.004_012
     
     #   Failed test 'is 1 >  0? -> true'
     #   at pdl/t/badvalue_scalar_cmp.t line 34.
