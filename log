@@ -1,4 +1,4 @@
-2.007_05
+2.007_06
     
     #   Failed test 'is 1 >  0? -> true'
     #   at pdl/t/badvalue_scalar_cmp.t line 34.
@@ -88,5 +88,5 @@ Test Summary Report
 pdl/t/badvalue_scalar_cmp.t (Wstat: 768 Tests: 3 Failed: 3)
   Failed tests:  1-3
   Non-zero exit status: 3
-Files=1, Tests=3,  0 wallclock secs ( 0.03 usr  0.04 sys +  0.06 cusr  0.11 csys =  0.24 CPU)
+Files=1, Tests=3,  0 wallclock secs ( 0.01 usr  0.04 sys +  0.07 cusr  0.10 csys =  0.22 CPU)
 Result: FAIL
